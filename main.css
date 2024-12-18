@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, rgb(255, 182, 193) 20%, rgb(135, 206, 235) 80%), 
+                url('https://www.transparenttextures.com/patterns/cubes.png');
+    text-align: center;
+    background-size: cover, auto; 
+    background-attachment: fixed; 
+    color: #333; 
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s; 
+    border: 2px solid white; 
+}
+
+.card:hover {
+    transform: scale(1.1); 
+}
+
+.hidden {
+    background-color: #006eff;
+    border: 2px solid white; 
+    border-radius: 10px; 
+}
+
+.score {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333; 
+}
